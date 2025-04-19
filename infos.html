@@ -40,10 +40,64 @@
     <h1>📊 Infos du serveur Next Life RP</h1>
 
     <h2>🎮 Connexion</h2>
-    <ul>
-      <li>🔗 <strong>CFX :</strong> <a href="https://cfx.re/join/7zmep6" target="_blank">cfx.re/join/7zmep6</a></li>
-      <li>🎧 <strong>Discord :</strong> <a href="https://discord.gg/PFnRw8Xzaa" target="_blank">discord.gg/PFnRw8Xzaa</a></li>
-    </ul>
+<style>
+  .button-neon {
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 10px;
+    animation: neonPulse 2s infinite alternate;
+    transition: transform 0.2s;
+  }
+
+  .button-neon:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-fivem {
+    background: #ff5e00;
+    box-shadow: 0 0 15px #ff5e00;
+  }
+
+  .btn-discord {
+    background: #5865F2;
+    box-shadow: 0 0 15px #5865F2;
+  }
+
+  .button-neon img {
+    height: 20px;
+  }
+
+  @keyframes neonPulse {
+    0% {
+      box-shadow: 0 0 10px;
+    }
+    100% {
+      box-shadow: 0 0 20px;
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+  }
+</style>
+
+<div class="btn-container">
+  <a class="button-neon btn-fivem" href="https://cfx.re/join/7zmep6" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/FiveM_Logo.png" alt="FiveM"> Se connecter
+  </a>
+  <a class="button-neon btn-discord" href="https://discord.gg/PFnRw8Xzaa" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"> Discord
+  </a>
+</div>
 
     <h2>🧠 Type de RP</h2>
     <p>RP sérieux avec ambiance immersive, néon/futuriste. Liberté d’action, encadrement strict contre le troll, staff à l’écoute.</p>
