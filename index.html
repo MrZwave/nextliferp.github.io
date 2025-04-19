@@ -12,24 +12,46 @@
       color: white;
       font-family: 'Arial', sans-serif;
       text-align: center;
+      overflow-x: hidden;
     }
+
     .logo {
       margin-top: 40px;
       width: 300px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards, neonPulse 3s infinite alternate;
+      filter: drop-shadow(0 0 10px #ff00ff);
     }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes neonPulse {
+      0% {
+        filter: drop-shadow(0 0 10px #ff00ff);
+      }
+      100% {
+        filter: drop-shadow(0 0 20px #00ffff);
+      }
+    }
+
     h1 {
       font-size: 2.5rem;
       margin: 20px 0 10px;
       color: #00ffff;
       text-shadow: 0 0 10px #00ffff;
     }
+
     p {
       font-size: 1.2rem;
       color: #ccc;
     }
+
     .btn-container {
       margin-top: 30px;
     }
+
     .btn {
       display: inline-block;
       background: #ff00ff;
@@ -42,10 +64,12 @@
       transition: 0.3s;
       box-shadow: 0 0 15px #ff00ff;
     }
+
     .btn:hover {
       background: #ff33ff;
       box-shadow: 0 0 25px #ff33ff;
     }
+
     @media screen and (max-width: 600px) {
       .logo {
         width: 80%;
